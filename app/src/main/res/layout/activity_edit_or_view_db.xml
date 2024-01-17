@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".edit_or_view_db">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/database_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="200dp"
+            android:text="What are you looking for?\n1.Edit Database\n2.View Database"
+            android:textSize="20dp"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/edit_database"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/database_text"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="70dp"
+            android:layout_toLeftOf="@+id/view_database"
+            android:text="Edit"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/view_database"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/database_text"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="80dp"
+            android:text="View"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+</ScrollView>
